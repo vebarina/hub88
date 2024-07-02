@@ -1,0 +1,57 @@
+.filter-component {
+    width: 90%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label, input {
+    color: #1a1a1a;
+    width: 100%;
+}
+
+label {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+input {
+    min-height: 50px;
+    border-radius: 8px;
+    border: 1px solid #1a1a1a;
+    padding: 5px 10px 5px 40px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    opacity: 0.8;
+}
+
+input:focus {
+    border: 2px solid #2d29ff;
+    outline: none;
+    box-shadow: 0 0 3px rgba(45, 41, 255, 0.5)
+}
+
+@media screen and (min-width: 1025px) {
+    .filter-component {
+        width: 60%;
+    }
+}

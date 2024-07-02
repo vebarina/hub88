@@ -1,0 +1,31 @@
+main {
+    width: 100vw;
+    max-width: 1200px;
+    padding: 50px 0;
+    font-family: Roboto, sans-serif;
+}
+
+main, .feedback-for-user {
+    margin: 0 auto;
+}
+
+.feedback-for-user {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.feedback-for-user p {
+    width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        width: 80vw;
+    }
+
+    .feedback-for-user {
+        width: 60%;
+    }
+}
