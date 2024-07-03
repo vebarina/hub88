@@ -13,7 +13,7 @@ query name: countries
 
 ## Project installation and setup
 
-1) Clone the repository
+1) Clone the repository (`git clone git@github.com:vebarina/hub88.git`)
 2) Run `npm install` to install all dependencies.
 3) Run `npm run dev` to start the app.
 
@@ -40,7 +40,7 @@ The *assets* folder contains all images and styles, in their respective sub-fold
 
 #### Components
 
-This folder contains the different components used in the app, such as *Filter* and *Table*.
+This folder contains the different components used in the app, such as *InputFilter* and *Table*.
 
 #### Queries
 
