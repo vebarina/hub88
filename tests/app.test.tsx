@@ -6,7 +6,7 @@ import InputFilter from "../src/components/InputFilter";
 import {Country} from "../src/types/types";
 
 describe('App', () => {
-  it('shows results in table based on input', () => {
+  it('shows results in the table based on the input filter', () => {
     const countries: Country[] = [
       {code: 'EE', name: 'Estonia'},
       {code: 'AR', name: 'Argentina'}

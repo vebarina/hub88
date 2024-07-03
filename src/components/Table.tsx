@@ -20,7 +20,7 @@ function Table({countries}: CountriesProp) {
         {
           countries?.map((country) => {
             return (
-              <tr key={country?.name}>
+              <tr key={country?.code}>
                 <td>{country?.name}</td>
                 <td>{country?.code}</td>
               </tr>

@@ -1,9 +1,9 @@
 import './App.css'
 import InputFilter from "./components/InputFilter.tsx";
+import Table from "./components/Table.tsx";
 import {useQuery} from '@apollo/client';
 import {useEffect, useState} from "react";
 import {Country} from "./types/types.ts";
-import Table from "./components/Table.tsx";
 import {client, GET_COUNTRIES} from "./queries/queries.ts";
 
 function App() {
@@ -35,7 +35,6 @@ function App() {
             <div className="feedback-for-user">
               <p>Loading...</p>
             </div>
-
             :
             countries?.length > 0 ?
               <Table countries={countries}/>
@@ -50,15 +49,11 @@ function App() {
                 )}
               </div>
         }
-
         {
           error && <div className="feedback-for-user">
                 <p>Error: {error.message}</p></div>
         }
-
-
       </main>
-
     </>
   )
 }
